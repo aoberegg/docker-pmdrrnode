@@ -11,5 +11,6 @@ RUN apt-get install -y npm
 
 RUN npm install -g bower
 RUN npm install -g gulp
+RUN npm install -g cordova-hot-code-push-cli
 
 RUN cd /Frontend/app && ls && bower install --allow-root && npm install && cd ~
